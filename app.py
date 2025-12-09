@@ -45,7 +45,6 @@ WELCOME_EMAIL_BODY = """Hi {email},
 
 Welcome to AskTheBridge! We are very happy to have you onboard.
 
-AskTheBridge is your smart AI chatbot, here to make your yachting experience easier, more enjoyable, and more informed. Your feedback is invaluable.
 
 Warm regards,
 The AskTheBridge Team
