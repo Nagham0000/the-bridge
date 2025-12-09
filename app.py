@@ -30,17 +30,15 @@ PRIMARY_FONT = "Arial, Helvetica, sans-serif"
 # -------------------------------
 # ENV LOAD
 # -------------------------------
-load_dotenv("env.txt")
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_SERVICE_KEY = st.secrets["SUPABASE_SERVICE_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
-SMTP_HOST = os.getenv("SMTP_HOST")
-SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
-SMTP_USER = os.getenv("SMTP_USER")
-SMTP_PASS = os.getenv("SMTP_PASS")
-FROM_EMAIL = os.getenv("FROM_EMAIL")
+SMTP_HOST = st.secrets["SMTP_HOST"]
+SMTP_PORT = st.secrets["SMTP_PORT"]
+SMTP_USER = st.secrets["SMTP_USER"]
+SMTP_PASS = st.secrets["SMTP_PASS"]
+FROM_EMAIL = st.secrets["FROM_EMAIL"]
 
 WELCOME_EMAIL_SUBJECT = "Welcome to AskTheBridge"
 WELCOME_EMAIL_BODY = """Hi {email},
